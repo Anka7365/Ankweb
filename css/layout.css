@@ -1,0 +1,329 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+:root {
+    --navbar-bg: #222831;
+    --navbar-text: #EEEEEE;
+    --navbar-hover: #d1b01b;
+}
+
+.navbar-custom {
+    background-color: var(--navbar-bg) !important;
+}
+
+.navbar-custom .navbar-nav .nav-link {
+    color: var(--navbar-text);
+}
+
+.navbar-custom .navbar-nav .nav-link:hover {
+    color: var(--navbar-hover) !important;
+}
+.navbar-toggler{
+    background-color: white;
+} 
+.nav-link.active{
+    color: var(--navbar-hover) !important;
+}
+
+
+
+
+
+.page-hero {
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+.cta-button{
+    color: white !important;
+}
+.page-hero::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Koyu şeffaf katman */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 2rem;
+}
+
+.hero-content p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.hero-content a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero-content a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+main article {
+    max-width: 1200px;  /* İçeriği geniş ekranlarda sınırlandır */
+    margin: 40px auto; /* Sayfa ortasına al */
+    padding: 20px;
+    background: #fff;  /* Arka planı beyaz yap */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
+    margin-bottom: 0px !important;
+}
+
+main article h2 {
+    font-size: 1.8rem;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+main article p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6; /* Okunaklığı artır */
+    text-align: justify; /* Metni iki yana yasla */
+}
+
+@media (max-width: 900px) {
+    main article {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    main article h2 {
+        font-size: 1.5rem;
+    }
+
+    main article p {
+        font-size: 1rem;
+    }
+}
+
+.swiper-pagination-bullet{
+    width: 20px !important;
+    height: 20px !important;
+    background: #393939 !important;
+    opacity: 1 !important;
+    border-radius: 0 !important;
+  }
+  .swiper-pagination-bullet-active{
+    width: 20px !important;
+    height: 20px !important;
+    background: orange !important;
+    opacity: 1 !important;
+    border-radius: 0 !important;
+  }
+  .swiper-button-next , .swiper-button-prev{
+    opacity: 1;
+    transition: 0.2s all;
+    color: rgb(0, 0, 0) !important;
+  }
+  .swiper:hover .swiper-button-next,
+  .swiper:hover .swiper-button-prev {
+    opacity: 1;
+  }
+  .read-more-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #222;
+    color: #fff;
+    font-size: 1rem;
+    z-index: 100;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.read-more-btn:hover {
+    background: #ffcc00;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hizmetler-article {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 60px 5%;
+    background: #f9f9f9;
+}
+
+.article-content {
+    max-width: 50%;
+}
+
+.article-content h2 {
+    font-size: 2rem;
+    color: #222;
+    margin-bottom: 15px;
+}
+
+.article-content p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.read-more-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #ffcc00;
+    color: black;
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.read-more-btn:hover {
+    background: #e6b800;
+}
+
+.article-image {
+    max-width: 45%;
+}
+
+.article-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .hizmetler-article {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .article-content {
+        max-width: 100%;
+    }
+
+    .article-image {
+        max-width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer Genel Stili */
+.site-footer {
+    background: #111;
+    color: white;
+    padding: 40px 5%;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Sol Kısım: İletişim Bilgileri */
+.footer-info,
+.footer-map,
+.footer-nav {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-info h3,
+.footer-map h3,
+.footer-nav h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Bağlantılar */
+.footer-info p a,
+.footer-nav ul li a {
+    font-size: 1.1rem;
+    color: #ddd;
+    text-decoration: none;
+}
+
+.footer-nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Navigasyon Menüsü */
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-nav ul li {
+    margin: 10px 0;
+}
+
+/* Alt Kısım */
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+    margin-top: 20px;
+}
+
